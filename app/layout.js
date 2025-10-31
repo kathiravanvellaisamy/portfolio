@@ -1,6 +1,6 @@
 import { Outfit,Ovo } from "next/font/google";
 import "./globals.css";
-import NavBar from "./components/NavBar";
+
 
 const outfit = Outfit({ 
   subsets: ["latin"],
@@ -21,9 +21,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${outfit.className} ${ovo.className} antialiased`}
+        className={`${outfit.className} ${ovo.className} antialiased leading-8 overflow-x-hidden`}
       >
-        <NavBar />
+       
         {children}
       </body>
     </html>
