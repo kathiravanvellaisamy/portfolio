@@ -4,7 +4,7 @@ import { MdOutlineWavingHand } from "react-icons/md";
 
 const HeroSection = () => {
   return (
-    <div className="w-11/12 max-w-3xl mx-auto text-center h-screen flex flex-col items-center justify-center gap-4">
+    <div id="top" className="w-11/12 max-w-3xl mx-auto text-center h-screen flex flex-col items-center justify-center gap-4">
         <div>
             <Image src="/profile.png" alt="Profile" width={100} height={100} className="rounded-full w-32"/>
             

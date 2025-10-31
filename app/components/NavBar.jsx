@@ -10,7 +10,7 @@ import { useRef } from "react";
 const NavLinks = [
     {
         title:"home",
-        link:"#home"
+        link:"#top"
     },
     {
         title:"about",
@@ -46,7 +46,7 @@ const NavBar = () => {
   return (
     <>
         <nav className="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
-            <a href="" className="flex font-bold  text-2xl">Kathir<span  className="text-orange-400">avan</span></a>
+            <a href="#top" className="flex font-bold  text-2xl">Kathir<span  className="text-orange-400">avan</span></a>
 
             <ul className="hidden md:flex items-center gap-6 md:gap-10 rounded-full px-12 py-3 shadow-sm bg-opacity-50 bg-white">
                 {NavLinks.map((nav)=>(
