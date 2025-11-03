@@ -66,7 +66,7 @@ const skillIcons = [
 
 const Skills = () => {
   return (
-    <div id="skills" className="w-11/12 max-w-7xl mx-auto text-center h-screen  scroll-mt-16 p-[12%]">
+    <div id="skills" className="w-11/12 max-w-7xl mx-auto text-center h-screen  scroll-mt-8 p-[12%]">
             <h4 className="text-center mb-2 text-lg font-ovo">What I Know</h4>
             <h2 className="text-center text-5xl font-ovo"> Skills & Technologies</h2>
             <div className="max-w-7xl mx-auto ">

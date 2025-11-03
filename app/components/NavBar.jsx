@@ -5,7 +5,7 @@ import { MdOutlineFileDownload } from "react-icons/md";
 import { LuSunMoon } from "react-icons/lu";
 import { TbMenu3 } from "react-icons/tb";
 import { CgClose } from "react-icons/cg";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const NavLinks = [
     {
@@ -33,6 +33,7 @@ const NavLinks = [
 
 const NavBar = () => {
 
+    const [isScrolling,setIsScrolling] = useState(false)
     const sideMenuRef = useRef()
 
     const openMenu = () =>{
@@ -42,13 +43,23 @@ const NavBar = () => {
         sideMenuRef.current.style.transform = 'translate(16rem)'
     }
 
+    useEffect(()=>{
+        window.addEventListener('scroll',()=>{
+            if(scrollY > 50){
+                setIsScrolling(true)
+            }else{
+                setIsScrolling(false)
+            }
+        })
+    },[])
+
 
   return (
     <>
-        <nav className="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
+        <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isScrolling ? "backdrop-blur-lg bg-white/50 shadow-sm" :""} `}>
             <a href="#top" className="flex font-bold  text-2xl">Kathir<span  className="text-orange-400">avan</span></a>
 
-            <ul className="hidden md:flex items-center gap-6 md:gap-10 rounded-full px-12 py-3 shadow-sm bg-opacity-50 bg-white">
+            <ul className={`hidden md:flex items-center gap-6 md:gap-10  ${isScrolling ? "":"shadow-sm bg-opacity-50 bg-white rounded-full px-12 py-3"}`}>
                 {NavLinks.map((nav)=>(
                     <li key={nav.title} className="font-ovo font-medium"><a href={nav.link} className="hover:text-orange-400">{nav.title}</a></li>
                 ))}
