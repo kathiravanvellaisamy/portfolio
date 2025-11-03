@@ -10,7 +10,7 @@ const MyLatestWork = () => {
     development skills using modern frontend and backend technologies.</p>
 
     <div className="grid grid-cols-1 md:grid-cols-3 mt-10 gap-5">
-        <div className="relative cursor-pointer group  border border-slate-300 rounded-lg p-3">
+        <div className="relative cursor-pointer group  border border-slate-300 rounded-lg p-3 hover:bg-slate-200">
             <div>
                 <h2 className="py-1 text-lg font-extralight">Project title here</h2>
                
@@ -19,7 +19,7 @@ const MyLatestWork = () => {
                 <Image src="/demo/ai.png" alt="project1" width={1000} height={100} className="w-full rounded-lg" />
             </div>
         </div>
-        <div className="relative cursor-pointer group  border border-slate-300 rounded-lg p-3">
+        <div className="relative cursor-pointer group  border border-slate-300 rounded-lg p-3 hover:bg-slate-200">
             <div>
                 <h2 className="py-1 text-lg font-extralight">Project title here</h2>
                
@@ -28,7 +28,7 @@ const MyLatestWork = () => {
                 <Image src="/demo/college.png" alt="project1" width={1000} height={100} className="w-full rounded-lg" />
             </div>
         </div>
-        <div className="relative cursor-pointer group   border border-slate-300 rounded-lg p-3">
+        <div className="relative cursor-pointer group   border border-slate-300 rounded-lg p-3 hover:bg-slate-200" >
             <div>
                 <h2 className="py-1 text-lg font-extralight">Project title here</h2>
                
@@ -37,7 +37,7 @@ const MyLatestWork = () => {
                 <Image src="/demo/food.png" alt="project1" width={1000} height={100} className="w-full rounded-lg" />
             </div>
         </div>
-        <div className="relative cursor-pointer   border border-slate-300 rounded-lg p-3">
+        <div className="relative cursor-pointer   border border-slate-300 rounded-lg p-3 hover:bg-slate-200">
             <div>
                 <h2 className="py-1 text-lg font-extralight">Project title here</h2>
                
@@ -46,7 +46,7 @@ const MyLatestWork = () => {
                 <Image src="/demo/ecoomerce.png" alt="project1" width={1000} height={100} className="w-full rounded-lg" />
             </div>
         </div>
-        <div className="relative cursor-pointer group   border border-slate-300 rounded-lg p-3">
+        <div className="relative cursor-pointer group   border border-slate-300 rounded-lg p-3 hover:bg-slate-200">
             <div>
                 <h2 className="py-1 text-lg font-extralight">Project title here</h2>
                
@@ -55,7 +55,7 @@ const MyLatestWork = () => {
                 <Image src="/demo/saas.png" alt="project1" width={1000} height={100} className="w-full rounded-lg" />
             </div>
         </div>
-        <div className="relative cursor-pointer group   border border-slate-300 rounded-lg p-3">
+        <div className="relative cursor-pointer group   border border-slate-300 rounded-lg p-3 hover:bg-slate-200">
             <div>
                 <h2 className="py-1 text-lg font-extralight">Project title here</h2>
                
