@@ -1,6 +1,7 @@
 
 
 import About from "./components/About";
+import Contact from "./components/Contact";
 import HeroSection from "./components/HeroSection";
 import MyLatestWork from "./components/MyLatestWork";
 import NavBar from "./components/NavBar";
@@ -16,6 +17,7 @@ export default function Home() {
     <About />
     <MyLatestWork />
     <Skills />
+    <Contact />
    </>
   );
 }
